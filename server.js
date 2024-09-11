@@ -18,7 +18,7 @@ const pracSchema = new mongoose.Schema({
   "age": { type: Number, required: true }
 });
 
-const Obj = mongoose.model('Obj', pracSchema);  
+const Obj = mongoose.model('Obj', pracSchema);  // THis is model instance name, we use it as the constructor.
 
 app.post("/", async (req, res) => {
   try {
@@ -42,7 +42,7 @@ app.get("/", async (req, res) => {
 app.put("/:name", async (req, res) => {  
   try {
    // const { name } = req.params;
-    const updatedObj = await Obj.findOneAndUpdate({ name: req.params.name }, req.body, { new: true });  // Correct model instance name
+    const updatedObj = await Obj.findOneAndUpdate({ name: req.params.name }, req.body, { new: true });  
     if (!updatedObj) {
       return res.status(404).send("Entry not found");  
     }
