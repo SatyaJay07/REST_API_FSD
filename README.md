@@ -1,20 +1,32 @@
-Creating and Testing REST APIs using Express, ThunderClient, MongoDB
-Installation / Prerequisites: 
-Express – Create a directory at your desired location, using 
-•	mkdir foldername
-•	cd foldername
-•	npm i express
-MongoDB – Download MongoDB from web @ https://www.mongodb.com/try/download/community
+# Creating and Testing REST APIs using Express, ThunderClient, and MongoDB
 
-Mongoose – This is a library that bridges Node Applications and MongoDB servers / DBs
-•	npm i mongoose
-Mongoose allows you to define Schema for the Documents you are going to 
-save into the collections in the DB of MongoDB.
- 
+## Installation / Prerequisites
 
-Installing Extensions in VS Code:
-•	Open VS Code
-•	Hit Ctrl+Shift+X (on Windows machines)
-•	Search for Extenions 
-o	ThunderClient – Client API Testing Tool, alternative to PostMan
-o	MongoDB for VS Code – Can be used instead of MongoDB compass
+### 1. Express  
+Create a directory at your desired location and set up Express:
+
+```bash
+mkdir foldername
+cd foldername
+npm i express
+```
+
+### 2. MongoDB
+Install MongoDB https://www.mongodb.com/try/download/community
+
+### 3. Mongoose 
+##### allows you to define Schema for typechecking purposes, even though MongoDB is SchemaLess.
+```bash
+npm i mongoose
+```
+
+### Complete all the installations to your desired folder by directly
+```bash
+mkdir crud_app
+cd crud_app
+npm init -y
+npm i express mongoose body-parser
+```
+
+#### Edit Environment Variables in Windows, copy path till bin it looks like C:\Program Files\MongoDB\Server\7.0\bin
+#### into the Path Environment Variable.
