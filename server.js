@@ -1,3 +1,9 @@
+// Tho there are many ways of acheiving this 
+// functionality I've choosen to do this 
+// way, You can include
+// Router, Controller etc
+// and place all your code
+// into structure.
 const express = require('express');
 const body_parser = require('body-parser');
 const mongoose = require('mongoose');
